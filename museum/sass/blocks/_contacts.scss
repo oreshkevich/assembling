@@ -1,0 +1,70 @@
+.contacts {
+margin-top: 75px;
+}
+
+.contacts-title {
+  font-family: Forum;
+font-weight: normal;
+font-size: 80px;
+line-height: 90px;
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #9D8665;
+
+}
+.contacts-line {
+  margin-top: 25px;
+  max-width: 1440px;
+height: 3px;
+background: #710707;
+}
+.contacts-wrapper {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__card {
+  margin-bottom: 75px;
+}
+.contacts__card-title {
+  margin-bottom: 51px;
+  width: 238px;
+  font-family: Roboto;
+font-weight: 500;
+font-size: 28px;
+line-height: 33px;
+color: #000000;
+}
+
+.contacts__card-text {
+  margin-bottom: 25px;
+  font-family: Roboto;
+font-weight: 300;
+font-size: 22px;
+line-height: 26px;
+color: #000000;
+}
+.contacts__card-text .contacts__card-span {
+  padding-left: 0px;
+
+}
+.info {
+  color: #000000;
+  text-decoration: none;
+  transition: color .5s;
+}
+.info:hover {
+  color: #9d8665;
+}
+
+.contacts__card-img {
+  
+  width: 960px;
+height: 620px;
+}
+
+
+.contacts__card-img iframe {
+  width: 100%;
+  height: 100%;
+}

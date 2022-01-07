@@ -1,0 +1,92 @@
+
+.header {
+  padding-top: 43px;
+//  max-width: 1920px;
+height: 139px;
+  background: #030303;
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__logo {
+ 
+  display: flex;
+  justify-content: space-between;
+}
+.mask {
+margin-top: 4px;
+  width: 50px;
+  height: 34px;
+  background-color: #fff;
+  -webkit-mask-image: url("./../assets/svg/logo.svg");
+  -webkit-mask-size: cover;
+  transition: 0.4s;
+}
+
+.mask:hover {
+  background-color: #9D8665;
+}
+
+.logo {
+  display: flex;
+}
+
+.header__logo-brend {
+  margin-left: 24px;
+  font-family: Forum;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: 50px;
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #FFFFFF;
+
+}
+.nav__icons {
+  display: flex;
+}
+.nav__icons-list {
+  margin-left: 56px;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 200;
+font-size: 22px;
+line-height: 50px;
+letter-spacing: 2px;
+color: #FFFFFF;
+
+}
+
+.header__logo-brend::after {
+content: '';
+display: block;
+height: 1px;
+background-color: #9D8665;
+transition: 0.2s;
+width: 0;
+}
+
+
+
+.nav__icons-list:hover {
+  color: #9D8665;
+}
+.header__logo-brend:hover::after {
+ width: 100%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.game-line {
+display: none;
+}
+
+.vigorous-icons {
+  display: none;
+}

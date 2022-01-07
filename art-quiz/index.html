@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="./dist/main.js" defer></script>
+  <title>Art Quiz</title>
+</head>
+
+<body>
+
+  <div class="body">
+    <header class="header">
+      <h1 class="h-hidden">Art Quiz</h1>
+    </header>
+    <main>
+      <div class="container page1 fade">
+
+        <div class="logo"></div>
+
+        <div class="menu">
+
+          <div class="artists">
+            <div class="shine">
+              <div class="menu-img artists-img play"></div>
+            </div>
+            <h2 class="text menu-text">
+              <span class="span-text">artists</span>
+              quiz
+            </h2>
+
+          </div>
+
+          <div class="pictures">
+            <div class="shine-two">
+              <div class="menu-img pictures-img play" value="en"></div>
+            </div>
+            <h2 class="text menu-text">
+              <span class="span-text">pictures</span>
+              quiz
+            </h2>
+
+          </div>
+        </div>
+        <div class="buttons-wrap">
+          <button class=" buttons buttons-setting play">settings</button>
+        </div>
+      </div>
+
+      <div class="container page2 fade hide">
+        <div class="logo"></div>
+        <h2 class="settings">settings</h2>
+
+        <div class="menu">
+          <div class="settings-item">
+            <div class="settings-img"></div>
+            <div class="settings-wrapper">
+              <div class="volume-wrapper">
+                <div class="volume-header">
+                  <div id="mute-button" class="mute-button"><svg width="30" height="30" viewBox="0 0 1792 1792"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M832 352v1088q0 26-19 45t-45 19-45-19l-333-333h-262q-26 0-45-19t-19-45v-384q0-26 19-45t45-19h262l333-333q19-19 45-19t45 19 19 45zm384 544q0 76-42.5 141.5t-112.5 93.5q-10 5-25 5-26 0-45-18.5t-19-45.5q0-21 12-35.5t29-25 34-23 29-36 12-56.5-12-56.5-29-36-34-23-29-25-12-35.5q0-27 19-45.5t45-18.5q15 0 25 5 70 27 112.5 93t42.5 142zm256 0q0 153-85 282.5t-225 188.5q-13 5-25 5-27 0-46-19t-19-45q0-39 39-59 56-29 76-44 74-54 115.5-135.5t41.5-173.5-41.5-173.5-115.5-135.5q-20-15-76-44-39-20-39-59 0-26 19-45t45-19q13 0 26 5 140 59 225 188.5t85 282.5zm256 0q0 230-127 422.5t-338 283.5q-13 5-26 5-26 0-45-19t-19-45q0-36 39-59 7-4 22.5-10.5t22.5-10.5q46-25 82-51 123-91 192-227t69-289-69-289-192-227q-36-26-82-51-7-4-22.5-10.5t-22.5-10.5q-39-23-39-59 0-26 19-45t45-19q13 0 26 5 211 91 338 283.5t127 422.5z"
+                        fill="#660033" />
+                    </svg></div>
+                  <input class="play" type="range" id="volume" value="0.5" max="1" min="0" step="0.01">
+                </div>
+              </div>
+              <div class="music">
+                <div class="volum-wrapper">
+                  <input class="check check-volume-one" id="fb" type="checkbox" checked="">
+                  <label for="fb" class="label label-volume center"><span></span></label>
+                  <h2 class="text text-label">on/off</h2>
+                </div>
+                <div class="volum-wrapper">
+                  <button class="play-music player-icon"></button>
+                  <h2 class="text text-label">music </h2>
+                </div>
+              </div>
+
+
+              <h2 class="text text-volume">volume</h2>
+            </div>
+          </div>
+          <div class="settings-item">
+            <div class="settings-img-time"></div>
+            <div class="settings-wrapper">
+              <div class="volume-wrapper">
+                <div class="volume-wrapper">
+                  <!-- <progress id="progress-bar"></progress> -->
+                  <input class="seek seek-controls play" id="seek" value="30" min="5" max="30" type="range" step="5">
+                  <div class="text text-number">30</div>
+                </div>
+
+              </div>
+              <input class="check check-volume" id="fbv" type="checkbox" checked="">
+              <label for="fbv" class="label label-volume"><span></span></label>
+              <h2 class="text text-label">on/off</h2>
+              <h2 class="text text-volume">time game</h2>
+            </div>
+
+          </div>
+
+        </div>
+        <input id="userInput" type="number" value="30" />
+        <div class="buttons-wrap">
+          <button id="btn-play" class="buttons buttons-save play" data-page="page1">SAVE</button>
+          <button class="buttons buttons-defaults play">DEFAULTS</button>
+        </div>
+
+      </div>
+      <div class="container page3 fade hide">
+        <div class="logo"></div>
+        <div class=" buttons-categories">
+          <button class="buttons buttons-home play">HOME</button>
+          <h2 class="settings">Categories</h2>
+          <div class="buttons-hidden"></div>
+        </div>
+        <div class="cards cards-menu play">
+        </div>
+        <!-- /.cards -->
+      </div>
+      <div class="container page4 fade hide">
+        <div class="logo"></div>
+        <div class=" buttons-categories">
+          <button class="buttons buttons-home home-two play">HOME</button>
+          <h2 class="settings">Categories</h2>
+          <div class="buttons-hidden"></div>
+          <!-- <button class="buttons buttons-star play">SCORE</button> -->
+        </div>
+        <div class="cards cards-menu-two play">
+        </div>
+      </div>
+      <!-- <div class="container page7">
+        <div class="logo"></div>
+        <div class=" buttons-categories">
+          <button class="buttons buttons-home home-two play">HOME</button>
+          <h2 class="settings">SCORE</h2>
+          <button class="buttons  buttons-categories-two play">CATEGORY</button>
+        </div>
+        <div class="cards cards-menu-score play">
+        </div>
+      </div> -->
+
+      <!-- <div class="container page5 ">
+        <div class="logo"></div>
+        <div class=" buttons-categories">
+          <button class="buttons buttons-home home-two play">HOME</button>
+          <h2 class="settings-article">КТО АВТОР ДАННОЙ КАРТИНЫ?</h2>
+          <div class="timer-wrapper">
+            <img class="timer-img" src="./img/svg/timer-picture.svg" alt="clock">
+            <div class="duration-timer">
+              <input id="userInput" type="number" value="15" />
+              <p id="timerr"> 00 </p>
+              <button class="button-timer">Start time</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-icons">
+          <a href="https://github.com/oreshkevich">
+            <img class="footer-logo" src="./img/svg/github.svg" alt="github">
+          </a>
+          <p class="text">© 2021</p>
+          <button class="fullscreen openfullscreen"></button>
+          <a href="https://rs.school/js/">
+            <img class="footer-logo" src="./img/svg/rs_school_js.svg" alt="rs_school_js">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>

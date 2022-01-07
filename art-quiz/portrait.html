@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="./dist/menu.js" defer></script>
+  <title>Art Quiz</title>
+</head>
+
+<body>
+
+  <div class="body">
+    <header class="header">
+      <h1 class="h-hidden">Art Quiz</h1>
+    </header>
+    <main>
+      <div class="container fade page5 ">
+        <div class="logo logo-picture"></div>
+        <div class=" buttons-categories">
+          <a href="./index.html" class="buttons buttons-home home-two play">HOME</a>
+          <h2 class="settings-article">КТО АВТОР ДАННОЙ КАРТИНЫ?</h2>
+          <!-- <button class="buttons buttons-star play">SCORE</button> -->
+          <div class="timer-wrapper">
+            <img class="timer-img" src="./img/svg/timer-picture.svg" alt="clock">
+            <div class="duration-timer">
+
+              <input id="userInput" type="number" value="30" />
+              <p id="timerr"> 00 </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-icons">
+          <a href="https://github.com/oreshkevich">
+            <img class="footer-logo" src="./img/svg/github.svg" alt="github">
+          </a>
+          <p class="text">© 2021</p>
+          <button class="fullscreen openfullscreen"></button>
+          <a href="https://rs.school/js/">
+            <img class="footer-logo" src="./img/svg/rs_school_js.svg" alt="rs_school_js">
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-auth-one fade">
+      <div class="modal-dialog-one">
+        <div class="modal-wrapper-one">
+          <div class="popup-answer-one"></div>
+          <h2 class="text text-picture-one">Ваше время закончилось, но вы не расстраивайтесь в нашей игре вы можете
+            повторить попытку </h2>
+          <button class="buttons buttons-repeat play">repeat</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

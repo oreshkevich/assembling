@@ -1,0 +1,271 @@
+.tickets {
+  background: #fff;
+  // height: 743px;
+  padding-bottom: 75px;
+}
+.tickets-title {
+  padding-top: 75px;
+  margin-bottom: 25px;
+  font-family: Forum;
+font-style: normal;
+font-weight: normal;
+font-size: 80px;
+line-height: 90px;
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #9D8665;
+}
+
+.tikets-line {
+ max-width: 1440px;
+height: 3px;
+background: #710707;
+margin-bottom: 75px;
+}
+.tickets__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+// .tickets__card {
+//   display: flex;
+// max-width: 720px;
+// max-height: 550px;
+// }
+
+.tickets__card {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 660px;
+}
+
+.tickets__card h3 {
+  margin-bottom: 50px;
+  font-family: "Roboto";
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+}
+
+.tickets__card .ticket-type {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__switch-left {
+margin-right: 256px;
+}
+
+.radio-span {
+padding-left: 41px;
+}
+
+.card-radio input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.card-radio .card__switch-input  {
+  position: relative;
+}
+.radio-one {
+  
+}
+.card-radio {
+  position: relative;
+}
+.card-radio label::before {
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  content: "";
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.card-radio input:checked + label::after{
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 6px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+.card__switch-title {
+  margin-bottom: 52px;
+  font-family: Roboto;
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+color: #000000;
+}
+.card__switch-title-left {
+  margin-left: 50px;
+  margin-bottom: 26px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+}
+.card__switch-input {
+  margin-bottom: 24px;
+  font-family: Roboto;
+font-weight: 300;
+font-size: 22px;
+line-height: 26px;
+color: #000000;
+}
+.card__switch-label {
+  display: block;
+  margin-top: 13px;
+  margin-bottom: 14px;
+  font-family: Roboto;
+font-weight: 300;
+font-size: 22px;
+line-height: 26px;
+color: #000000;
+}
+.card__switch-wrapper {
+  position: relative;
+}
+
+.card__switch-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 150px;
+  height: 50px;
+  border: 3px solid #000;
+  box-sizing: border-box;
+}
+
+.card__switch-wrapper .counter {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 300px;
+  cursor: auto;
+  outline: none;
+}
+
+.card__switch-wrapper .counter::-webkit-inner-spin-button,
+.card__switch-wrapper .counter::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+.counter-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Roboto";
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color .5s;
+}
+
+
+.counter-button {
+  //  font-size: 22px;
+  //  line-height: 26px;
+  //  font-weight: 300px;
+  //  cursor: auto;
+  //  outline: none;
+  position: absolute;
+//   width: 18px;
+// height: 38px;
+//   font-family: Roboto;
+
+// font-size: 32px;
+// line-height: 37px;
+// text-align: center;
+// color: #000000;
+}
+
+.counter-button:hover:not(.counter) {
+  color: #9d8665;
+}
+
+.card__switch-input label:hover {
+  color: #9d8665;
+}
+.card__switch-input label {
+  cursor: pointer;
+  transition: All .5s;
+}
+
+.card__switch {
+margin-right: -2px;
+margin-left: 0px;
+}
+
+
+
+.plus {
+  font-size: 32px;
+  top: 5px;
+  right: 15px;
+}
+.minus {
+  font-size: 38px;
+  // top: 5px;
+  left: 15px;
+}
+
+// .counter-input {
+//   width: 150px;
+// height: 50px;
+//   font-family: Roboto;
+// font-style: normal;
+// font-weight: 300;
+// font-size: 21px;
+// line-height: 26px;
+// text-align: center;
+// }
+
+.card__switch-sum {
+  margin-top: 50px;
+  margin-bottom: 58px;
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+letter-spacing: 1.65px;
+color: #000000;
+
+}
+.card__switch-button {
+ margin-left: -22px;
+ padding-left: 36px;
+  width: 175px;
+height: 50px;
+background: #000000;
+border-radius: 2px;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 26px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 2px;
+
+color: #ffffff;
+
+}
+.card__switch-button:hover{
+  background: #9D8665;
+}

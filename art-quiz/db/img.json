@@ -1,0 +1,62 @@
+[
+  {
+    "name": "portrait ",
+    "number": "1",
+    "image": "img/00.jpg",
+    "products": "images0.json"
+  },
+  {
+    "name": "landscape ",
+    "number": "2",
+    "image": "img/10.jpg",
+    "products": "images1.json"
+  },
+  {
+    "name": "still life  ",
+    "number": "3",
+    "image": "img/20.jpg",
+    "products": "images2.json"
+  },
+  {
+    "name": "impressionism ",
+    "number": "4",
+    "image": "img/30.jpg",
+    "products": "images3.json"
+  },
+  {
+    "name": "expressionism ",
+    "number": "5",
+    "image": "img/40.jpg",
+    "products": "images4.json"
+  },
+  {
+    "name": "avant-garde",
+    "number": "6",
+    "image": "img/50.jpg",
+    "products": "images5.json"
+  },
+  {
+    "name": "Renaissance",
+    "number": "7",
+    "image": "img/60.jpg",
+    "products": "images6.json"
+  },
+  {
+    "name": "Surrealism  ",
+    "number": "8",
+    "image": "img/70.jpg",
+    "products": "images7.json"
+  },
+  {
+    "name": "kitsch   ",
+    "number": "9",
+    "image": "img/80.jpg",
+    "products": "images8.json"
+  },
+  {
+    "name": "minimalism ",
+    "number": "10",
+    "image": "img/90.jpg",
+    "products": "images9.json"
+  }
+]

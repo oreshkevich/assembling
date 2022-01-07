@@ -1,0 +1,93 @@
+.explore__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.explore {
+  height: 865px;
+  background: #030303;
+
+}
+
+.explore__card {
+  position: relative;
+  margin-top: 75px;
+}
+.explore__card-title {
+  margin-bottom: 25px;
+  font-family: Forum;
+font-style: normal;
+font-weight: normal;
+font-size: 80px;
+line-height: 90px;
+
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.explore__card-line {
+  margin-bottom: 76px;
+
+  max-width: 660px;
+height: 3px;
+background: #710707;
+border-radius: 0px;
+}
+.explore__card-text {
+  max-width: 657px;
+  margin-bottom: 25px;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 38px;
+color: #FFFFFF;
+
+}
+.explore__card-img {
+  margin-top: 17px;
+  width: 720px;
+  height: 700px;
+}
+
+.yellow {
+  color: #CAAA7D;
+}
+
+.explore__card-text-hidden {
+  display: block;
+}
+
+.explore__card-slid {
+  position: absolute;
+ top: 18px;
+ right: 260px;
+}
+
+.explore__card-over {
+  padding: 15px 0 0 0;
+  position: relative;
+  height: 700px;
+  width: 720px;
+}
+
+.card-over-smile {
+  position: absolute;
+  left: 0px;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+
+.slider-explore {
+  position: absolute;
+  top: 15px;
+  z-index: 100;
+  cursor: ew-resize;
+  width: 40px;
+  height: 700px;
+  opacity: 0.7;
+  background-image: url("./../assets/svg/explore-slider.svg");
+}
+
